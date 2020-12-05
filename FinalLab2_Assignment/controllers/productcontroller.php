@@ -14,7 +14,7 @@
 	}
 	function addProduct($name,$price,$qty,$desc,$image,$c_id)
 	{
-		$query = "INSERT INTO products (id,name,price,quantity,description,image,catagorie_id) VALUES (NULL,'$name','$price','$qty','$desc','$image','$c_id')";
+		$query = "INSERT INTO products (id,name,price,quantity,description,image,catagory_id) VALUES (NULL,'$name','$price','$qty','$desc','$image','$c_id')";
 		execute($query);
 	}
 	function getAllProducts()

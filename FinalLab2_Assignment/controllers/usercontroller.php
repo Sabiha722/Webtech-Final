@@ -71,7 +71,7 @@
     {
         $password=md5($password);
        
-        $query = "INSERT INTO users (name,username,email,password) VALUES ('$name','$username','$password','$email')";
+        $query = "INSERT INTO users (name,username,password,email) VALUES ('$name','$username','$password','$email')";
         execute($query);
        
        
