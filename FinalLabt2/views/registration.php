@@ -1,51 +1,43 @@
-<?php include_once "../controller/registration.php" ;?>
-<html>
-	<head>
-		<title>Registration</title>
-  <link rel="stylesheet" href="../css_files/registration.css"></head>
-	<body>
+<?php 
+require_once"../controllers/usercontroller.php";
 
-		<fieldset id="register_form" >
+?>
+
+<div class="center-login">
+     <h1 class="text text-center">Sign Up</h1>
+     <fieldset id="register_form" >
       <h1>Welcome to Registration.</h1>
-
-			<form action="" method="post"  >
-				<table>
-          <tr>
-          <td style="text-align: left;"> Name: </td>
-          <td style="text-align: left;"><input type="text" name="name" value=<?php echo $name; ?>><span><?php echo $error_name; ?></span></td>
-          </tr>
-          <tr>
-          <td style="text-align: left;"> Username:</td>
-          <td style="text-align: left;"><input type="text" name="username" value=<?php echo $username; ?>><span><?php echo $error_username; ?></span></td>
-          </tr>
-          <tr>
-          <td style="text-align: left;"> Password:</td>
-          <td style="text-align: left;"><input type="password" name="password" value=<?php echo $password; ?>><span><?php echo $error_password; ?></span></td>
-          </tr>
-
-          <tr>
-          <td style="text-align: left;">Email:</td>
-          <td style="text-align: left;"><input type="text" name="email" value=<?php echo $email; ?> ><span><?php echo $error_email; ?></span></td>
-          </tr>
-
-          <tr>
-          <td style="text-align: left;">Phone:</td>
-          <td style="text-align: left;">
-          <input type="text" name="phone"   value=<?php echo $phone_no; ?>> <span><?php echo $error_phone_no; ?></span>
-
-          </td>
-          </tr>
-
-
-          <tr>
-          <td colspan="2" align="center">
-          <input type="submit" name="signup" value="Register">
-          </td>
-          </tr>
-				</table>
-			</form>
-			<p>Already a member ? </p> <span> <a href="../view/index.php"> Login </a></span>
-
-		</fieldset>
-	</body>
-</html>
+       <script src="../js/validateuser.js"></script>
+          <form action="" method="post" onsubmit="return validateform()" name="registerform"   >
+          <div class="form-group">
+               
+               <h4 class="text">Name</h4> 
+               <input type="text" name="name" class="form-control">
+               <span style="color:red;">*<?php echo $err_name;?></span><span id="name_error">  
+          </div>
+          <div class="form-group">
+               <h4 class="text">Username</h4> 
+               <input type="text" name="username" class="form-control">
+               <span style="color:red;">*<?php echo $err_username;?></span><span id="username_error">
+          </div>
+          <div class="form-group">
+               <h4 class="text">Password</h4> 
+               <input type="password" name="password" class="form-control">
+               <span style="color:red;">*<?php echo $err_password;?></span><span id="password_error">
+          </div>         
+          <div class="form-group">
+               <h4 class="text">Email</h4> 
+               <input type="text" name="email" class="form-control">
+               <span style="color:red;">*<?php echo $err_email;?></span>
+          </div>
+          
+          <div class="form-group">
+               <h4 class="text">Phone</h4> 
+               <input type="password" name="contact" class="form-control">
+               <span style="color:red;">*<?php echo $err_contact;?></span><span id="number_error">
+          </div>
+          <div class="form-group text-center">
+               
+               <input type="submit" class="btn btn-success" name="Register" value="Sign Up" class="form-control">
+          </div>
+</div>

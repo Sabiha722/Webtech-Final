@@ -1,5 +1,5 @@
 <?php
-require_once '../controller/dashboard.php';
+require_once '../controllers/dashboard.php';
 $users = getAllUsers();
 ?>
 
@@ -24,9 +24,7 @@ $users = getAllUsers();
     			<th>Name</th>
     			<th> Username</th>
     			<th>Email </th>
-          <th>Phone </th>
-
-
+                <th>Phone </th>
     		</thead>
     		<tbody>
     			<?php
