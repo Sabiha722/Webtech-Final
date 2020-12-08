@@ -33,7 +33,7 @@ require_once"../controllers/usercontroller.php";
           
           <div class="form-group">
                <h4 class="text">Phone</h4> 
-               <input type="password" name="contact" class="form-control">
+               <input type="text" name="contact" class="form-control">
                <span style="color:red;">*<?php echo $err_contact;?></span><span id="number_error">
           </div>
           <div class="form-group text-center">
