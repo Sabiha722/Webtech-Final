@@ -1,4 +1,4 @@
 <?php include 'admin_header.php';?>
-<!--dashboard starts -->
+echo
 
 <?php include 'admin_footer.php';?>

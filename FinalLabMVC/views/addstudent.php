@@ -3,7 +3,7 @@ require_once '../controllers/student_controller.php';
 require_once '../controllers/department_controller.php';
 $departments = getAllDepartments();
 ?>
-<!--addproduct starts -->
+
 <div class="center">
 
 	<form action="" method="post" onsubmit="return validateform()" name="registerform"   >
@@ -38,11 +38,6 @@ $departments = getAllDepartments();
 									 ?>
 								</select> </td>
 			</tr>
-
-
-
-
-
 
 			<tr>
 			<td  align="left">

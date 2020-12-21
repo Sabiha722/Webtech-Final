@@ -55,9 +55,7 @@ else {
   document.getElementById("number_error").innerHTML="";
 }
 
-
-
- if(password.length<8){
+if(password.length<8){
 	document.getElementById("password_error").innerHTML="Password must be at least 8 characters long.";
   haserror = 1;
 }
