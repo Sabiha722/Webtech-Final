@@ -12,6 +12,7 @@ echo '<td>Edition</td>';
 echo '<td>Image</td>';
 echo "</tr>";
 
+
 foreach($books as $book){
 echo "<tr>";
 echo '<td><a href="../views/book_detail.php?id='.$book["id"].'">'.$book["id"].'</a></td>';

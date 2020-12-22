@@ -1,7 +1,6 @@
 <?php
 require_once '../controllers/bookcontroller.php';
 $key = $_GET["id"];
-
 $book = getBook($key);
 
 echo "  <table>";
